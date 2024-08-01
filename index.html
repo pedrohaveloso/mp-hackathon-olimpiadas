@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="pt-BR">
   <head>
@@ -8,12 +8,14 @@
   </head>
 
   <body>
-    <script type="module">
-      const baseurl = new URL("https://apis.codante.io/olympic-games");
+    <script type="module" src="./main.js"></script>
 
-      fetch(new URL(baseurl + "/countries"))
-        .then((response) => response.json())
-        .then((json) => console.log(json));
-    </script>
+    <table>
+      <caption>
+        Países
+      </caption>
+
+      <tbody id="countries-table"></tbody>
+    </table>
   </body>
 </html>
